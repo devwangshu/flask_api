@@ -11,7 +11,7 @@ dew_service_blue = Blueprint("Dew_Services", __name__)
 
 
 @dew_service_blue.route(app_constants.EndPoints.api_show_data, methods=[app_constants.POST])
-@dew_service_blue.route("/show_data", methods=[app_constants.POST])
+# @dew_service_blue.route("/show_data", methods=[app_constants.POST])
 def list_data():
     if request.method == app_constants.POST:
         try:
